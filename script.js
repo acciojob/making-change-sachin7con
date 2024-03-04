@@ -1,6 +1,6 @@
 const makeChange = (c) => {
   //SGN your name here
-	let ob = { "q": 1, "d": 2, "n": 0, "p": 2 };
+	let ob = { "q": 0, "d": 0, "n": 0, "p": 0 };
 	if(c>=25){
 		ob.q = Math.floor(c/25);
 		c= c%25;
@@ -15,7 +15,8 @@ const makeChange = (c) => {
 		c= c%1;
 	}
 
-	return ob();
+	return ob;
+	
 };
 
 // // Do not the change the code below
